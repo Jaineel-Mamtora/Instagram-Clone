@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:instagram_clone/home/ui/home_page.dart';
+
+import 'home/ui/home.dart';
 import 'auth/ui/authorization_page.dart';
 
 void main() {
@@ -21,10 +22,12 @@ class MyApp extends StatelessWidget {
       },
       child: MaterialApp(
         title: 'Instagram Clone',
+        debugShowCheckedModeBanner: false,
+        theme: ThemeData(fontFamily: 'Figtree'),
         initialRoute: AuthorizationPage.routeName,
         routes: {
           AuthorizationPage.routeName: (_) => const AuthorizationPage(),
-          HomePage.routeName: (_) => const HomePage(),
+          Home.routeName: (_) => const Home(),
         },
       ),
     );

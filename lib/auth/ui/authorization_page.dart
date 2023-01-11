@@ -1,7 +1,7 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:instagram_clone/home/ui/home_page.dart';
+import 'package:instagram_clone/home/ui/home.dart';
 
 class AuthorizationPage extends StatelessWidget {
   static const routeName = '/authorization';
@@ -143,7 +143,7 @@ class AuthorizationPage extends StatelessWidget {
                       ),
                     ),
                     onPressed: () {
-                      Navigator.pushNamed(context, HomePage.routeName);
+                      Navigator.pushNamed(context, Home.routeName);
                     },
                     child: const Text(
                       'Log in',
